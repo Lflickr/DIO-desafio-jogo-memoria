@@ -9,8 +9,8 @@ function countDown() {
     currentTime--
     timeLeft.textContent = currentTime
     if (currentTime <= 0) {
-        alert(`Game Over! Sua pontuação foi ${(document.querySelectorAll('.boxMatch').length) / 2}`)
-        window.location.reload()
+        alert(`Game Over! Você encontrou ${(document.querySelectorAll('.boxMatch').length) / 2} pares`)
+        clearInterval(countDownTimer)
     }
 }
 
@@ -51,5 +51,6 @@ function checkMatch() {
 
     if (document.querySelectorAll('.boxMatch').length == emojis.length) {
         alert('voce ganhou')
+        clearInterval(countDownTimer)
     }
 }
