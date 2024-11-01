@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memoria</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+</head>
+<body>
+    <main>
+        <header>
+            <h2>JOGO DA MEMORIA</h2>
+            <div class="menu-time">
+                <h2>TEMPO:</h2>
+                <h2 id="time-left">60</h2>
+            </div>
+        </header>
+        <div class="game"></div>
+        <button class="reset" onclick="window.location.reload()">RESET GAME</button>
+    </main>
+    <script src="./src/scriptis/engine.js" defer></script>
+</body>
+</html>
